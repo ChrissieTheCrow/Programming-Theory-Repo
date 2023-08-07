@@ -5,7 +5,7 @@ using UnityEngine;
 public class Animal : MonoBehaviour
 {
 
-    public float turnSpeed { get; private set; }
+    public float turnSpeed { get; private set; } //ENCAPSULATION
     private float horizontalInput;
    
 
@@ -22,7 +22,7 @@ public class Animal : MonoBehaviour
         AnimalTurn();
     }
 
-    public virtual void AnimalForward()
+    public virtual void AnimalForward() //ABSTRACTION
     {
         transform.Translate(Vector3.forward * Time.deltaTime * 15);
     }
